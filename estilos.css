@@ -1,0 +1,226 @@
+/* ============================================
+   Tema White Label - Custom Brand
+   Paleta: Rojo #f22f2f | Negro #0a0a0a
+   Solo CSS | Sin modificar plantillas
+   ============================================ */
+
+/* --- Variables globales --- */
+:root {
+    --primary:       #f22f2f;    /* Rojo intenso */
+    --primary-dark:  #c71e1e;    /* Hover / activo */
+    --primary-light: #fde8e8;    /* Fondos suaves rojos */
+    --secondary:     #0a0a0a;    /* Negro */
+    --body-bg:       #f5f5f5;
+    --card-bg:       #ffffff;
+    --text-main:     #0a0a0a;
+    --text-muted:    #5a5a5a;
+    --border-color:  #e0e0e0;
+    --success:       #0f9d58;
+    --danger:        #f22f2f;
+    --warning:       #f9ab00;
+    --radius:        8px;
+}
+
+/* --- Tipografía --- */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--body-bg);
+    color: var(--text-main);
+}
+
+/* --- Navbar --- */
+.navbar {
+    background: #0a0a0a !important;
+    border-bottom: 2px solid var(--primary);
+}
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--primary) !important;
+}
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+}
+
+/* --- Logo en navbar --- */
+.navbar-brand img {
+    max-height: 42px;
+    filter: brightness(0) invert(1); /* Logo blanco sobre navbar negro */
+}
+
+/* --- Tarjetas --- */
+.card,
+.panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+/* --- Botones primarios (rojo) --- */
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    border-radius: 6px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(242,47,47,0.35);
+    transform: translateY(-1px);
+}
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 6px;
+    font-weight: 500;
+}
+.btn-outline-primary:hover {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* --- Botones secundarios (negro) --- */
+.btn-secondary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    border-radius: 6px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.btn-secondary:hover {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+/* --- Links --- */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* --- Tablas --- */
+.table thead th {
+    background: #0a0a0a;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--primary);
+}
+.table tbody tr:hover {
+    background: var(--primary-light);
+}
+
+/* --- Formularios --- */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(242,47,47,0.12);
+}
+.form-label {
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    background: #fff;
+    border-right: 1px solid var(--border-color);
+}
+.sidebar .nav-link {
+    border-radius: 6px;
+    margin: 2px 6px;
+    color: var(--text-main);
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* --- Footer --- */
+.footer {
+    background: #0a0a0a;
+    border-top: 3px solid var(--primary);
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    padding: 2rem 0;
+}
+.footer a {
+    color: var(--primary);
+}
+.footer a:hover {
+    color: #ffffff;
+}
+
+/* --- Badges --- */
+.badge.bg-success { background: var(--success) !important; }
+.badge.bg-warning { background: var(--warning) !important; color: #000; }
+.badge.bg-danger  { background: var(--danger) !important; }
+
+/* --- Progress bars --- */
+.progress-bar {
+    background: var(--primary);
+}
+
+/* --- Login page --- */
+.login-logo img {
+    max-height: 64px;
+}
+.login-container {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+.login-container h1,
+.login-container h2 {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* --- Page title accent --- */
+.page-title {
+    border-left: 4px solid var(--primary);
+    padding-left: 16px;
+    color: var(--secondary);
+}
+
+/* --- Alertas --- */
+.alert-danger {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary-dark);
+}
+
+/* --- Ocultar marca FOSSBilling --- */
+.fossbilling-branding,
+.powered-by,
+#powered-by,
+.brand-fossbilling {
+    display: none !important;
+}
