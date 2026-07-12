@@ -3,5 +3,6 @@
     "version": "1.0.0",
     "description": "Tema personalizado marca blanca",
     "author": "Ciudad Creativa",
-    "type": "client"
+    "type": "client",
+    "extends": "huraga"
 }
