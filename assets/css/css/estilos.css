@@ -294,6 +294,6 @@ a:hover {
 
 /* --- Logo personalizado --- */
 .navbar-brand img {
-    content: url("/themes/ciudadcreativa/assets/images/logo.png");
+    content: url("/themes/ciudadcreativa/assets/images/logo_cc.png");
     max-height: 45px;
 }
