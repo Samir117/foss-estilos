@@ -1,15 +1,12 @@
 /* ============================================
    Ciudad Creativa - Tema personalizado
-   Modo claro + Modo oscuro
    ============================================ */
 
-/* --- Modo claro (sobrescribe variables Bootstrap) --- */
+/* --- Modo claro --- */
 [data-bs-theme="light"] {
     --bs-primary:        #f22f2f;
     --bs-primary-rgb:    242, 47, 47;
-    --bs-primary-bg:     #fde8e8;
     --bs-secondary:      #0a0a0a;
-    --bs-secondary-rgb:  10, 10, 10;
     --bs-body-bg:        #e8e8e8;
     --bs-body-color:     #111111;
     --bs-tertiary-bg:    #f0f0f0;
@@ -17,6 +14,25 @@
     --bs-heading-color:  #0a0a0a;
 }
 
+/* --- Headers: fondo rojo, texto blanco --- */
+[data-bs-theme="light"] .card-header {
+    background: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+[data-bs-theme="light"] .card-header h1,
+[data-bs-theme="light"] .card-header h2,
+[data-bs-theme="light"] .card-header h3,
+[data-bs-theme="light"] .card-header h4,
+[data-bs-theme="light"] .card-header h5,
+[data-bs-theme="light"] .card-header h6,
+[data-bs-theme="light"] .card-header p,
+[data-bs-theme="light"] .card-header span,
+[data-bs-theme="light"] .card-header a {
+    color: #ffffff !important;
+}
+
+/* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
     background: #0a0a0a !important;
     border-bottom: 3px solid #f22f2f;
@@ -31,50 +47,53 @@
     color: #f22f2f !important;
 }
 
-[data-bs-theme="light"] .navbar-brand {
-    color: #ffffff !important;
-    font-weight: 700;
-}
-
-[data-bs-theme="light"] .card {
-    border: 1px solid #cccccc;
-}
-
-[data-bs-theme="light"] .card-header {
-    background: #0a0a0a !important;
-    color: #ffffff !important;
-}
-
+/* --- Tablas --- */
 [data-bs-theme="light"] .table thead th {
-    background: #0a0a0a !important;
+    background: #f22f2f !important;
     color: #ffffff !important;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    border-bottom: 2px solid #f22f2f;
+    border-bottom: 2px solid #0a0a0a;
 }
 
-[data-bs-theme="light"] .btn-primary {
-    background: #f22f2f;
-    border-color: #f22f2f;
+/* --- Botones primarios --- */
+[data-bs-theme="light"] .btn-primary,
+[data-bs-theme="dark"] .btn-primary {
+    background: #f22f2f !important;
+    border-color: #f22f2f !important;
+    color: #ffffff !important;
 }
 
-[data-bs-theme="light"] .btn-primary:hover {
-    background: #c71e1e;
-    border-color: #c71e1e;
+[data-bs-theme="light"] .btn-primary:hover,
+[data-bs-theme="dark"] .btn-primary:hover {
+    background: #c71e1e !important;
+    border-color: #c71e1e !important;
+    color: #ffffff !important;
 }
 
-[data-bs-theme="light"] .btn-outline-primary {
+[data-bs-theme="light"] .btn-outline-primary,
+[data-bs-theme="dark"] .btn-outline-primary {
+    color: #f22f2f !important;
+    border-color: #f22f2f !important;
+}
+
+[data-bs-theme="light"] .btn-outline-primary:hover,
+[data-bs-theme="dark"] .btn-outline-primary:hover {
+    background: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+/* --- Links --- */
+[data-bs-theme="light"] a {
     color: #f22f2f;
-    border-color: #f22f2f;
 }
 
-[data-bs-theme="light"] .btn-outline-primary:hover {
-    background: #fde8e8;
-    color: #c71e1e;
+/* --- Sidebar --- */
+[data-bs-theme="light"] .sidebar .nav-link.active,
+[data-bs-theme="light"] .sidebar .nav-link:hover {
+    color: #f22f2f !important;
+    font-weight: 600;
 }
 
+/* --- Footer --- */
 [data-bs-theme="light"] .footer {
     background: #0a0a0a !important;
     color: #999999 !important;
@@ -85,27 +104,22 @@
     color: #f22f2f !important;
 }
 
-[data-bs-theme="light"] a {
-    color: #f22f2f;
+/* --- Páginas de login/signup --- */
+[data-bs-theme="light"] .page-login .card-header,
+[data-bs-theme="light"] .page-signup .card-header,
+[data-bs-theme="light"] .page-password-reset .card-header {
+    background: #f22f2f !important;
+    color: #ffffff !important;
 }
 
-[data-bs-theme="light"] a:hover {
-    color: #c71e1e;
-}
 
-[data-bs-theme="light"] .sidebar .nav-link.active,
-[data-bs-theme="light"] .sidebar .nav-link:hover {
-    color: #f22f2f !important;
-    font-weight: 600;
-}
+/* ============================================
+   MODO OSCURO
+   ============================================ */
 
-/* --- Modo oscuro --- */
 [data-bs-theme="dark"] {
     --bs-primary:        #ff4444;
     --bs-primary-rgb:    255, 68, 68;
-    --bs-primary-bg:     #2d1111;
-    --bs-secondary:      #ffffff;
-    --bs-secondary-rgb:  255, 255, 255;
     --bs-body-bg:        #0a0a0a;
     --bs-body-color:     #e0e0e0;
     --bs-tertiary-bg:    #141414;
@@ -113,6 +127,25 @@
     --bs-heading-color:  #ffffff;
 }
 
+/* --- Headers: fondo rojo oscuro, texto blanco --- */
+[data-bs-theme="dark"] .card-header {
+    background: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .card-header h1,
+[data-bs-theme="dark"] .card-header h2,
+[data-bs-theme="dark"] .card-header h3,
+[data-bs-theme="dark"] .card-header h4,
+[data-bs-theme="dark"] .card-header h5,
+[data-bs-theme="dark"] .card-header h6,
+[data-bs-theme="dark"] .card-header p,
+[data-bs-theme="dark"] .card-header span,
+[data-bs-theme="dark"] .card-header a {
+    color: #ffffff !important;
+}
+
+/* --- Navbar --- */
 [data-bs-theme="dark"] .navbar {
     background: #0f0f0f !important;
     border-bottom: 2px solid #f22f2f;
@@ -127,17 +160,48 @@
     color: #ff4444 !important;
 }
 
-[data-bs-theme="dark"] .card-header {
-    background: #141414 !important;
-    border-bottom: 1px solid #2a2a2a;
-}
-
+/* --- Tablas --- */
 [data-bs-theme="dark"] .table thead th {
-    background: #141414 !important;
-    color: #e0e0e0 !important;
-    border-bottom: 2px solid #f22f2f;
+    background: #f22f2f !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #0a0a0a;
 }
 
+/* --- Botones (modo oscuro) - forzar rojo sobre azul --- */
+[data-bs-theme="dark"] .btn-primary,
+[data-bs-theme="dark"] .btn.btn-primary,
+[data-bs-theme="dark"] button.btn-primary,
+[data-bs-theme="dark"] a.btn-primary {
+    background: #f22f2f !important;
+    border-color: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .btn-primary:hover {
+    background: #c71e1e !important;
+    border-color: #c71e1e !important;
+    color: #ffffff !important;
+}
+
+/* --- Cualquier botón con clase bg-primary --- */
+[data-bs-theme="dark"] .bg-primary,
+[data-bs-theme="light"] .bg-primary {
+    background-color: #f22f2f !important;
+}
+
+/* --- Links --- */
+[data-bs-theme="dark"] a {
+    color: #ff4444;
+}
+
+/* --- Sidebar --- */
+[data-bs-theme="dark"] .sidebar .nav-link.active,
+[data-bs-theme="dark"] .sidebar .nav-link:hover {
+    color: #ff4444 !important;
+    font-weight: 600;
+}
+
+/* --- Footer --- */
 [data-bs-theme="dark"] .footer {
     background: #0f0f0f !important;
     color: #999999 !important;
@@ -148,47 +212,22 @@
     color: #ff4444 !important;
 }
 
-[data-bs-theme="dark"] a {
-    color: #ff4444;
+/* --- Páginas de login/signup --- */
+[data-bs-theme="dark"] .page-login .card-header,
+[data-bs-theme="dark"] .page-signup .card-header,
+[data-bs-theme="dark"] .page-password-reset .card-header {
+    background: #f22f2f !important;
+    color: #ffffff !important;
 }
 
-[data-bs-theme="dark"] a:hover {
-    color: #ff6666;
-}
 
-[data-bs-theme="dark"] .sidebar .nav-link.active,
-[data-bs-theme="dark"] .sidebar .nav-link:hover {
-    color: #ff4444 !important;
-    font-weight: 600;
-}
+/* ============================================
+   GENERAL (ambos modos)
+   ============================================ */
 
 /* --- Ocultar marca FOSSBilling --- */
 .fossbilling-branding,
 .powered-by,
 #powered-by {
     display: none !important;
-}
-
-/* --- Ocultar logos del tema (se usa el del panel) --- */
-.navbar-brand img.hide-theme-dark,
-.navbar-brand img.hide-theme-light {
-    display: none !important;
-}
-
-/* --- Logo personalizado --- */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.navbar-brand::before {
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-image: url("/themes/ciudadcreativa/assets/img/logo_cc.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
