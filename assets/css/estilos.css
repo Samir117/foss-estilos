@@ -187,11 +187,15 @@
 [data-bs-theme="dark"] .bg-primary,
 [data-bs-theme="light"] .bg-primary {
     background-color: #f22f2f !important;
+        color: #ffffff !important;
+
 }
 
 /* --- Links --- */
 [data-bs-theme="dark"] a {
     color: #ff4444;
+        color: #ffffff !important;
+
 }
 
 /* --- Sidebar --- */
