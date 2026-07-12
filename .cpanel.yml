@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/c39ibjjyi43w/intranet.ciudadcreat1va.com/themes/ciudadcreativa
+    - /bin/cp -R * $DEPLOYPATH
