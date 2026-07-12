@@ -292,8 +292,3 @@ a:hover {
     color: var(--primary);
 }
 
-/* --- Logo personalizado --- */
-.navbar-brand img {
-    content: url("assets/img/logo_cc.png");
-    max-height: 45px;
-}
