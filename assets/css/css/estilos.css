@@ -13,7 +13,7 @@
     --body-bg:       #f5f5f5;
     --card-bg:       #ffffff;
     --text-main:     #0a0a0a;
-    --text-muted:    #0a0a0a;
+    --text-muted:    #5a5a5a;
     --border-color:  #e0e0e0;
     --success:       #0f9d58;
     --danger:        #f22f2f;
@@ -223,4 +223,77 @@ a:hover {
 #powered-by,
 .brand-fossbilling {
     display: none !important;
+}
+
+/* ============================================
+   Modo oscuro
+   ============================================ */
+
+[data-bs-theme="dark"] {
+    --body-bg:       #0a0a0a;    /* Fondo negro */
+    --card-bg:       #141414;    /* Tarjetas ligeramente más claras */
+    --text-main:     #e0e0e0;    /* Texto claro */
+    --text-muted:    #999999;    /* Texto secundario */
+    --border-color:  #2a2a2a;    /* Bordes sutiles */
+    --primary-light: #2d1111;    /* Fondo rojo oscuro */
+}
+
+[data-bs-theme="dark"] .navbar {
+    background: #0a0a0a !important;
+    border-bottom: 2px solid var(--primary);
+}
+
+[data-bs-theme="dark"] .navbar .nav-link {
+    color: #e0e0e0 !important;
+}
+
+[data-bs-theme="dark"] .table thead th {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .footer {
+    background: #0a0a0a;
+    border-top: 3px solid var(--primary);
+    color: #999999;
+}
+
+[data-bs-theme="dark"] .form-control {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    background: #1a1a1a;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .sidebar {
+    background: #0a0a0a;
+    border-right: 1px solid #2a2a2a;
+}
+
+[data-bs-theme="dark"] .card-header {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+[data-bs-theme="dark"] .dropdown-menu {
+    background: #141414;
+    border-color: #2a2a2a;
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+    color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+    background: #1a1a1a;
+    color: var(--primary);
+}
+
+/* --- Logo personalizado --- */
+.navbar-brand img {
+    content: url("/themes/ciudadcreativa/assets/images/logo.png");
+    max-height: 45px;
 }
