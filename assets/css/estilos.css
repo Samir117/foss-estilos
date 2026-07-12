@@ -1,233 +1,89 @@
 /* ============================================
-   Ciudad Creativa - Tema personalizado
+   Badges y botones de estado
    ============================================ */
 
-/* --- Modo claro --- */
-[data-bs-theme="light"] {
-    --bs-primary:        #f22f2f;
-    --bs-primary-rgb:    242, 47, 47;
-    --bs-secondary:      #0a0a0a;
-    --bs-body-bg:        #e8e8e8;
-    --bs-body-color:     #111111;
-    --bs-tertiary-bg:    #f0f0f0;
-    --bs-border-color:   #cccccc;
-    --bs-heading-color:  #0a0a0a;
-}
-
-/* --- Headers: fondo rojo, texto blanco --- */
-[data-bs-theme="light"] .card-header {
-    background: #f22f2f !important;
+/* --- Todos los badges: texto blanco --- */
+.badge,
+[class*="badge"] {
     color: #ffffff !important;
-}
-
-[data-bs-theme="light"] .card-header h1,
-[data-bs-theme="light"] .card-header h2,
-[data-bs-theme="light"] .card-header h3,
-[data-bs-theme="light"] .card-header h4,
-[data-bs-theme="light"] .card-header h5,
-[data-bs-theme="light"] .card-header h6,
-[data-bs-theme="light"] .card-header p,
-[data-bs-theme="light"] .card-header span,
-[data-bs-theme="light"] .card-header a {
-    color: #ffffff !important;
-}
-
-/* --- Navbar --- */
-[data-bs-theme="light"] .navbar {
-    background: #0a0a0a !important;
-    border-bottom: 3px solid #f22f2f;
-}
-
-[data-bs-theme="light"] .navbar .nav-link {
-    color: #ffffff !important;
-}
-
-[data-bs-theme="light"] .navbar .nav-link:hover,
-[data-bs-theme="light"] .navbar .nav-link.active {
-    color: #f22f2f !important;
-}
-
-/* --- Tablas --- */
-[data-bs-theme="light"] .table thead th {
-    background: #f22f2f !important;
-    color: #ffffff !important;
-    border-bottom: 2px solid #0a0a0a;
-}
-
-/* --- Botones primarios --- */
-[data-bs-theme="light"] .btn-primary,
-[data-bs-theme="dark"] .btn-primary {
-    background: #f22f2f !important;
-    border-color: #f22f2f !important;
-    color: #ffffff !important;
-}
-
-[data-bs-theme="light"] .btn-primary:hover,
-[data-bs-theme="dark"] .btn-primary:hover {
-    background: #c71e1e !important;
-    border-color: #c71e1e !important;
-    color: #ffffff !important;
-}
-
-[data-bs-theme="light"] .btn-outline-primary,
-[data-bs-theme="dark"] .btn-outline-primary {
-    color: #f22f2f !important;
-    border-color: #f22f2f !important;
-}
-
-[data-bs-theme="light"] .btn-outline-primary:hover,
-[data-bs-theme="dark"] .btn-outline-primary:hover {
-    background: #f22f2f !important;
-    color: #ffffff !important;
-}
-
-/* --- Links --- */
-[data-bs-theme="light"] a {
-    color: #f22f2f;
-}
-
-/* --- Sidebar --- */
-[data-bs-theme="light"] .sidebar .nav-link.active,
-[data-bs-theme="light"] .sidebar .nav-link:hover {
-    color: #f22f2f !important;
     font-weight: 600;
 }
 
-/* --- Footer --- */
-[data-bs-theme="light"] .footer {
-    background: #0a0a0a !important;
-    color: #999999 !important;
-    border-top: 3px solid #f22f2f;
-}
-
-[data-bs-theme="light"] .footer a {
-    color: #f22f2f !important;
-}
-
-/* --- Páginas de login/signup --- */
-[data-bs-theme="light"] .page-login .card-header,
-[data-bs-theme="light"] .page-signup .card-header,
-[data-bs-theme="light"] .page-password-reset .card-header {
-    background: #f22f2f !important;
+/* --- Badge success (verde) --- */
+.badge.bg-success,
+.badge.text-bg-success,
+.bg-success .badge {
+    background-color: #0f9d58 !important;
     color: #ffffff !important;
 }
 
-
-/* ============================================
-   MODO OSCURO
-   ============================================ */
-
-[data-bs-theme="dark"] {
-    --bs-primary:        #ff4444;
-    --bs-primary-rgb:    255, 68, 68;
-    --bs-body-bg:        #0a0a0a;
-    --bs-body-color:     #e0e0e0;
-    --bs-tertiary-bg:    #141414;
-    --bs-border-color:   #2a2a2a;
-    --bs-heading-color:  #ffffff;
+/* --- Badge warning (amarillo) --- */
+.badge.bg-warning,
+.badge.text-bg-warning {
+    background-color: #f9ab00 !important;
+    color: #0a0a0a !important; /* texto negro sobre amarillo */
 }
 
-/* --- Headers: fondo rojo oscuro, texto blanco --- */
-[data-bs-theme="dark"] .card-header {
-    background: #f22f2f !important;
-    color: #ffffff !important;
-}
-
-[data-bs-theme="dark"] .card-header h1,
-[data-bs-theme="dark"] .card-header h2,
-[data-bs-theme="dark"] .card-header h3,
-[data-bs-theme="dark"] .card-header h4,
-[data-bs-theme="dark"] .card-header h5,
-[data-bs-theme="dark"] .card-header h6,
-[data-bs-theme="dark"] .card-header p,
-[data-bs-theme="dark"] .card-header span,
-[data-bs-theme="dark"] .card-header a {
-    color: #ffffff !important;
-}
-
-/* --- Navbar --- */
-[data-bs-theme="dark"] .navbar {
-    background: #0f0f0f !important;
-    border-bottom: 2px solid #f22f2f;
-}
-
-[data-bs-theme="dark"] .navbar .nav-link {
-    color: #e0e0e0 !important;
-}
-
-[data-bs-theme="dark"] .navbar .nav-link:hover,
-[data-bs-theme="dark"] .navbar .nav-link.active {
-    color: #ff4444 !important;
-}
-
-/* --- Tablas --- */
-[data-bs-theme="dark"] .table thead th {
-    background: #f22f2f !important;
-    color: #ffffff !important;
-    border-bottom: 2px solid #0a0a0a;
-}
-
-/* --- Botones (modo oscuro) - forzar rojo sobre azul --- */
-[data-bs-theme="dark"] .btn-primary,
-[data-bs-theme="dark"] .btn.btn-primary,
-[data-bs-theme="dark"] button.btn-primary,
-[data-bs-theme="dark"] a.btn-primary {
-    background: #f22f2f !important;
-    border-color: #f22f2f !important;
-    color: #ffffff !important;
-}
-
-[data-bs-theme="dark"] .btn-primary:hover {
-    background: #c71e1e !important;
-    border-color: #c71e1e !important;
-    color: #ffffff !important;
-}
-
-/* --- Cualquier botón con clase bg-primary --- */
-[data-bs-theme="dark"] .bg-primary,
-[data-bs-theme="light"] .bg-primary {
+/* --- Badge danger (rojo) --- */
+.badge.bg-danger,
+.badge.text-bg-danger {
     background-color: #f22f2f !important;
-}
-
-/* --- Links --- */
-[data-bs-theme="dark"] a {
-    color: #ff4444;
-}
-
-/* --- Sidebar --- */
-[data-bs-theme="dark"] .sidebar .nav-link.active,
-[data-bs-theme="dark"] .sidebar .nav-link:hover {
-    color: #ff4444 !important;
-    font-weight: 600;
-}
-
-/* --- Footer --- */
-[data-bs-theme="dark"] .footer {
-    background: #0f0f0f !important;
-    color: #999999 !important;
-    border-top: 3px solid #f22f2f;
-}
-
-[data-bs-theme="dark"] .footer a {
-    color: #ff4444 !important;
-}
-
-/* --- Páginas de login/signup --- */
-[data-bs-theme="dark"] .page-login .card-header,
-[data-bs-theme="dark"] .page-signup .card-header,
-[data-bs-theme="dark"] .page-password-reset .card-header {
-    background: #f22f2f !important;
     color: #ffffff !important;
 }
 
+/* --- Badge info (azul → rojo) --- */
+.badge.bg-info,
+.badge.text-bg-info {
+    background-color: #f22f2f !important;
+    color: #ffffff !important;
+}
 
-/* ============================================
-   GENERAL (ambos modos)
-   ============================================ */
+/* --- Botones de pago / success --- */
+.btn-success,
+.btn.btn-success {
+    background-color: #0f9d58 !important;
+    border-color: #0f9d58 !important;
+    color: #ffffff !important;
+}
 
-/* --- Ocultar marca FOSSBilling --- */
-.fossbilling-branding,
-.powered-by,
-#powered-by {
-    display: none !important;
+.btn-success:hover {
+    background-color: #0b7a44 !important;
+    border-color: #0b7a44 !important;
+    color: #ffffff !important;
+}
+
+/* --- Botones warning --- */
+.btn-warning,
+.btn.btn-warning {
+    background-color: #f9ab00 !important;
+    border-color: #f9ab00 !important;
+    color: #0a0a0a !important;
+}
+
+/* --- Botones danger --- */
+.btn-danger,
+.btn.btn-danger {
+    background-color: #f22f2f !important;
+    border-color: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+/* --- Botones info (azul → rojo) --- */
+.btn-info,
+.btn.btn-info {
+    background-color: #f22f2f !important;
+    border-color: #f22f2f !important;
+    color: #ffffff !important;
+}
+
+/* --- Estados de facturas y servicios --- */
+.text-success { color: #0f9d58 !important; }
+.text-danger { color: #f22f2f !important; }
+.text-warning { color: #f9ab00 !important; }
+
+/* --- Logo personalizado --- */
+.navbar-brand img {
+    content: url("assets/img/logo_cc.png");
+    max-height: 45px;
+    width: auto;
 }
