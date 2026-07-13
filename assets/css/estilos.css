@@ -30,7 +30,7 @@
 [data-bs-theme="light"] .card-header p,
 [data-bs-theme="light"] .card-header span,
 [data-bs-theme="light"] .card-header a {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 /* --- Navbar modo claro --- */
@@ -188,7 +188,16 @@
 /* --- Links --- */
 [data-bs-theme="light"] a {
     color: #000000;
+    
 }
+[data-bs-theme="light"] a {
+    background-color: transparent;
+  }
+
+[data-bs-theme="light"] a:hover {
+    background-color: transparent;
+    color: #000
+  }
 
 /* --- Sidebar --- */
 [data-bs-theme="light"] .sidebar .nav-link.active,
