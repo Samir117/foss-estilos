@@ -34,7 +34,7 @@
 
 /* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
-    background: #0a0a0a !important;
+    background: #dcdcdc !important;
     border-bottom: 3px solid #f22f2f;
 }
 
@@ -83,7 +83,7 @@
 
 /* --- Links --- */
 [data-bs-theme="light"] a {
-    color: #f22f2f;
+    color: #ffffff;
 }
 
 /* --- Sidebar --- */
