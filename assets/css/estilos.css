@@ -34,12 +34,12 @@
 
 /* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
-    background: #f22f2f !important;
+    background: #0a0a0a !important;
     border-bottom: 3px solid #f22f2f;
 }
 
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 [data-bs-theme="light"] .navbar .nav-link:hover,
@@ -83,7 +83,7 @@
 
 /* --- Links --- */
 [data-bs-theme="light"] a {
-    color: #ffffff;
+    color: #000000;
 }
 
 /* --- Sidebar --- */
