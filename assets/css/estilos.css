@@ -27,11 +27,13 @@
 [data-bs-theme="light"] .card-header h5,
 [data-bs-theme="light"] .card-header h6,
 [data-bs-theme="light"] .card-header p,
-[data-bs-theme="light"] .card-header span,
-[data-bs-theme="light"] .card-header a {
+[data-bs-theme="light"] .card-header span
+{
     color: #ffffff !important;
 }
-
+[data-bs-theme="light"] .card-header a {
+    color: #000000;
+}
 /* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
     background: #0a0a0a !important;
