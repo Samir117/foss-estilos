@@ -29,12 +29,12 @@
 [data-bs-theme="light"] .card-header p,
 [data-bs-theme="light"] .card-header span,
 [data-bs-theme="light"] .card-header a {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 /* --- Navbar modo claro --- */
 [data-bs-theme="light"] .navbar {
-    background: #f5f0e8 !important;
+    background: #e8e8e8 !important;
     border-bottom: 3px solid #f22f2f;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     padding: 0.5rem 0;
@@ -141,9 +141,8 @@
 [data-bs-theme="light"] .client-dropdown .nav-link.dropdown-toggle:hover {
     color: #f22f2f !important;
 }
-
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 [data-bs-theme="light"] .navbar .nav-link:hover,
