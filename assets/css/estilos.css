@@ -34,7 +34,7 @@
 
 /* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
-    background: #dcdcdc !important;
+    background: #0a0a0a !important;
     border-bottom: 3px solid #f22f2f;
 }
 
@@ -234,4 +234,16 @@
 .powered-by,
 #powered-by {
     display: none !important;
+}
+
+/* --- Logo personalizado --- */
+.navbar-brand img {
+    content: url("/themes/estilosscss/assets/img/logo_cc.png");
+    max-height: 45px;
+    width: auto;
+}
+
+/* Logo en modo oscuro */
+[data-bs-theme="dark"] .navbar-brand img {
+    content: url("/themes/estilosscss/assets/img/logo_cc.png");
 }
