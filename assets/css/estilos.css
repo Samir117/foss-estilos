@@ -39,8 +39,9 @@
 }
 
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
+
 
 [data-bs-theme="light"] .navbar .nav-link:hover,
 [data-bs-theme="light"] .navbar .nav-link.active {
