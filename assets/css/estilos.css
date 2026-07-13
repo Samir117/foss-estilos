@@ -29,7 +29,7 @@
 [data-bs-theme="light"] .card-header p,
 [data-bs-theme="light"] .card-header span,
 [data-bs-theme="light"] .card-header a {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* --- Navbar --- */
@@ -39,7 +39,7 @@
 }
 
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 [data-bs-theme="light"] .navbar .nav-link:hover,
