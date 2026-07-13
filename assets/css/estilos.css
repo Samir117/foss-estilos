@@ -7,7 +7,7 @@
     --bs-primary:        #f22f2f;
     --bs-primary-rgb:    242, 47, 47;
     --bs-secondary:      #0a0a0a;
-    --bs-body-bg:        #ffffff;
+    --bs-body-bg:        #0a0a0a;
     --bs-body-color:     #111111;
     --bs-tertiary-bg:    #f0f0f0;
     --bs-border-color:   #cccccc;
@@ -39,7 +39,7 @@
 }
 
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 
