@@ -7,9 +7,9 @@
     --bs-primary:        #f22f2f;
     --bs-primary-rgb:    242, 47, 47;
     --bs-secondary:      #0a0a0a;
-    --bs-body-bg:        #ffffff;
+    --bs-body-bg:        #e8e8e8;
     --bs-body-color:     #111111;
-    --bs-tertiary-bg:    #0a0a0a;
+    --bs-tertiary-bg:    #f0f0f0;
     --bs-border-color:   #cccccc;
     --bs-heading-color:  #0a0a0a;
 }
@@ -28,20 +28,19 @@
 [data-bs-theme="light"] .card-header h6,
 [data-bs-theme="light"] .card-header p,
 [data-bs-theme="light"] .card-header span,
-{
+[data-bs-theme="light"] .card-header a {
     color: #ffffff !important;
 }
 
 /* --- Navbar --- */
 [data-bs-theme="light"] .navbar {
-    background: #0a0a0a !important;
+    background: #f22f2f !important;
     border-bottom: 3px solid #f22f2f;
 }
 
 [data-bs-theme="light"] .navbar .nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
-
 
 [data-bs-theme="light"] .navbar .nav-link:hover,
 [data-bs-theme="light"] .navbar .nav-link.active {
