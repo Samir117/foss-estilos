@@ -362,37 +362,3 @@
 }
 
 
-/* ============================================
-   Logo en página de Login
-   ============================================ */
-
-/* Contenedor del logo en login */
-.page-login .login-logo img,
-.page-login .navbar-brand img,
-.page-login .card-header img,
-.page-signup .login-logo img,
-.page-signup .navbar-brand img,
-.page-password-reset .login-logo img {
-    content: url("/themes/estilosscss/assets/img/logo_cc.png") !important;
-    max-height: 70px;
-    width: auto;
-    margin: 0 auto 1rem;
-    display: block;
-}
-
-/* Si el logo está dentro de un enlace */
-.page-login .login-logo a img,
-.page-signup .login-logo a img {
-    content: url("/themes/estilosscss/assets/img/logo_cc.png") !important;
-    max-height: 70px;
-    width: auto;
-}
-
-/* Modo oscuro */
-[data-bs-theme="dark"] .page-login .login-logo img,
-[data-bs-theme="dark"] .page-signup .login-logo img,
-[data-bs-theme="dark"] .page-password-reset .login-logo img {
-    content: url("/themes/estilosscss/assets/img/logo_cc.png") !important;
-    max-height: 70px;
-    width: auto;
-}
