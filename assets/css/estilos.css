@@ -12,6 +12,7 @@
     --bs-tertiary-bg:    #f0f0f0;
     --bs-border-color:   #cccccc;
     --bs-heading-color:  #0a0a0a;
+    --bs-btn-bg: transparent !important;
 }
 
 /* --- Headers: fondo rojo, texto blanco --- */
@@ -29,7 +30,7 @@
 [data-bs-theme="light"] .card-header p,
 [data-bs-theme="light"] .card-header span,
 [data-bs-theme="light"] .card-header a {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* --- Navbar modo claro --- */
