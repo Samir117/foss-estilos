@@ -161,9 +161,9 @@
 /* --- Botones primarios --- */
 [data-bs-theme="light"] .btn-primary,
 [data-bs-theme="dark"] .btn-primary {
-    background: #f22f2f !important;
+    background: white !important;
     border-color: #f22f2f !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 [data-bs-theme="light"] .btn-primary:hover,
